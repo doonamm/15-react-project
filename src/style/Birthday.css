@@ -1,0 +1,61 @@
+.birthday{
+    background: palevioletred;
+    color: #fff;
+    padding: 20px 0;
+}
+.birthday h1{
+    text-align: center
+}
+.birthday .section{
+    width: 290px;
+    background: #fff;
+    margin: 30px auto 0;
+    padding: 18px 25px;
+    border-radius: 4px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 12px 2px rgba(0, 0, 0, .4);
+}
+.birthday h2{
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.birthday button{
+    border: none;
+    width: 100%;
+    background: palevioletred;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    letter-spacing: .5px;
+    border-radius: 4px;
+}
+.birthday ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px;
+}
+.birthday li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.birthday li > div{
+    padding-top: 10px;
+}
+.birthday li > div h3{
+    font-size: 16px;
+}
+.birthday li > div p{
+    color: #888;
+    font-size: 14px;
+}
+.birthday img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
