@@ -7,8 +7,8 @@ import Birthday from './page/Birthday';
 function App() {
     return ( 
         <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/birthday" component={Birthday} exact/>
+        <Route path="" component={Home} exact/>
+        <Route path="/birthday" component={Birthday} exact/>
         </Switch>
     );
 }
