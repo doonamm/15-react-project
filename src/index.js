@@ -13,7 +13,7 @@ const store = createStore(Reducers);
 ReactDOM.render( 
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename="/15-react-project">
                 <App/>
             </BrowserRouter>
         </Provider>
