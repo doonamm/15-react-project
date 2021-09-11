@@ -13,7 +13,7 @@ const store = createStore(Reducers);
 ReactDOM.render( 
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter basename="/15-react-project">
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <App/>
             </BrowserRouter>
         </Provider>
