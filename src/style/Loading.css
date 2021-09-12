@@ -1,0 +1,23 @@
+.loading h1 span{
+    animation: loading-jump linear infinite;
+    display: inline-block;
+    margin-right: 2px;
+    color: rgba(0, 0, 0, .8);
+}
+@keyframes loading-jump{
+    0%{
+        transform: translateY(0) scale(1, 1);
+    }
+    5%{
+        transform: translateY(5px) scale(1.8, 0.4);
+    }
+    6%{
+        transform: translateY(-25px) scale(0.9, 1.2);
+    }
+    8%{
+        transform: translateY(5px) scale(1.8, 0.6);
+    }
+    10%{
+        transform: translateY(0) scale(1, 1);
+    }
+}

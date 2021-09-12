@@ -2,8 +2,6 @@
     background: radial-gradient(circle at 50% 0,rgba(255,0,0,.5),rgba(255,0,0,0) 70.71%)
     , radial-gradient(circle at 6.7% 75%,rgba(0,0,255,.5),rgba(0,0,255,0) 70.71%)
     , radial-gradient(circle at 93.3% 75%,rgba(0,255,0,.5),rgba(0,255,0,0) 70.71%) beige;
-
-    padding: 40px 0;
 }
 .home h1{
     color: #fff;
@@ -21,12 +19,15 @@
     border-radius: 20px;
 }
 .home a{
+    width: 90px;
+    text-align: center;
     color: firebrick;
-    padding: 10px 15px;
+    padding: 12px 0 11px;
     background:rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     letter-spacing: .5px;
     transition: .3s ease-in-out;
+    user-select: none;
 }
 .home a:hover{
     color: rgba(255, 255, 255, 0.9);

@@ -7,6 +7,7 @@ export default function Home(){
             <h1>Home - Landing Page</h1>
             <div className="home-link">
                 <Link to="/birthday">Birthday</Link>
+                <Link to="/tour">Tour</Link>
             </div>
         </div>
     );
