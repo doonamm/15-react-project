@@ -1,0 +1,132 @@
+.exp{
+    background: #f1f5f8;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.exp h1{
+    color: rgba(255, 255, 255, .4);
+}
+.exp h2{
+    text-align: center;
+    font-size: 37px;
+    color: #102a42;
+}
+.exp h2::after{
+    content: '';
+    display: block;
+    margin: 8px auto 50px;
+    height: 5px;
+    width: 70px;
+    background: #2caeba;
+}
+.exp .content{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.exp .switch-btn{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.exp .switch-btn button{
+    width: 100%;
+    padding: 4px 40px;
+    margin-bottom: 22px;
+    border: 0;
+    background: 0;
+    font-size: 20px;
+    color: #102a42;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s linear;
+    border: 2.5px solid transparent;
+    border-radius: 3.5px;
+}
+.exp .switch-btn button.active{
+    border-left-color: #2caeba;
+    color: #2caeba;
+}
+.exp .switch-btn button:hover{
+    border-left-color: #2caeba;
+    color: #2caeba;
+}
+.exp .content h3{
+    font-size: 29px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    letter-spacing: .8px;
+    color: #102a42;
+}
+.exp .company{
+    background: #dae2ec;
+    display: inline-block;
+    font-weight: bold;
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    letter-spacing: .8px;
+    color: #617da3;
+}
+.exp .date{
+    font-size: 16px;
+    letter-spacing: .8px;
+    margin-bottom: 25px;
+    color: #617da3;
+}
+.exp .detail ul li{
+    margin-bottom: 15px;
+    display: flex;
+    color: #102a42;
+}
+.exp .symbol{
+    font-size: 30px;
+    margin-right: 35px;
+    display: inline-block;
+    color: #2caeba;
+}
+.exp .more-btn{
+    margin: 50px auto 0;
+    display: block;
+    border: none;
+    background: #2caeba;
+    padding: 9px 60px 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, .78);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.exp .more-btn:hover{
+    background: hsl(184, 80%, 74%);
+    color: #102a42;
+}
+@media screen and (max-width: 970px) {
+    .exp h2::after{
+        margin-bottom: 40px;
+    }
+    .exp .content{
+        flex-direction: column;
+        max-width: 80vw;
+    }
+    .exp .switch-btn{
+        flex-direction: row;
+        max-width: fit-content;
+        margin: 0 auto 50px;
+    }
+    .exp .switch-btn button{
+        padding: 0;
+        padding-bottom: 10px;
+        margin: 0 20px;
+    }
+    .exp .switch-btn button.active{
+        border-color: transparent;
+        border-bottom-color: #2caeba;
+    }
+    .exp .switch-btn button:hover{
+        border-color: transparent;
+        border-bottom-color: #2caeba;
+    }
+}

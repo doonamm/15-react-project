@@ -10,7 +10,8 @@ export default function Home(){
                 <Link to="/tour">Tour</Link>
                 <Link to="/reviews">Reviews</Link>
                 <Link to="/qa">Q {'&'} A</Link>
-                <Link to="menu">Menu</Link>
+                <Link to="/menu">Menu</Link>
+                <Link to="/experience">Experience</Link>
             </div>
         </div>
     );

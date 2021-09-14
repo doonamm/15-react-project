@@ -7,11 +7,13 @@ import Tour from './page/Tour';
 import Reviews from './page/Reviews';
 import QA from './page/QA';
 import Menu from './page/Menu';
+import Experience from './page/Experience';
 
 function App() {
     return ( 
         <>
             <Switch>
+                <Route path="/experience" component={Experience} />
                 <Route path="/menu" component={Menu} />
                 <Route path="/qa" component={QA} />
                 <Route path="/reviews" component={Reviews} />
