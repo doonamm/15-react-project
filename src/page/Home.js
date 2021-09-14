@@ -8,6 +8,9 @@ export default function Home(){
             <div className="home-link">
                 <Link to="/birthday">Birthday</Link>
                 <Link to="/tour">Tour</Link>
+                <Link to="/reviews">Reviews</Link>
+                <Link to="/qa">Q {'&'} A</Link>
+                <Link to="menu">Menu</Link>
             </div>
         </div>
     );
