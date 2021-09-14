@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import DATA from '../data/Menu';
 import MenuList from '../components/MenuList';
-import MenuFilter from './MenuFilter';
+import MenuFilter from '../components/MenuFilter';
 const allCategories = [
     'all',
     ...new Set(DATA.map(data=>data.category))
