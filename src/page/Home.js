@@ -12,6 +12,12 @@ export default function Home(){
                 <Link to="/qa">Q {'&'} A</Link>
                 <Link to="/menu">Menu</Link>
                 <Link to="/experience">Experience</Link>
+                <Link to="/slider">Slider</Link>
+                <Link to="/lorem">Lorem</Link>
+                <Link to="/color">Color</Link>
+                <Link to="/bud">Bud</Link>
+                <Link to="/navbar">NavBar</Link>
+                <Link to="/sidebar">SideBar</Link>
             </div>
         </div>
     );

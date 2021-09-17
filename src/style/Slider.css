@@ -1,0 +1,102 @@
+.slider{
+    background: var(--clr-grey-10);
+}
+.slider h1{
+    color: rgba(255, 255, 255, .4);
+}
+.slider img{
+    min-width: 150px;
+    min-height: 150px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--clr-grey-8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 5px 10px rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+}
+.slider .section{
+    padding: 0 50px;
+}
+.slider .section h2{
+    color: var(--clr-grey-4);
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+.slider h2 span{
+    color: var(--clr-primary-5);
+    margin-right: 20px;
+}
+.slider .people-container{
+    position: relative;
+    max-width: 80vw;
+    min-height: 450px;
+    margin: 50px auto 0;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+}   
+.slider .person{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s linear, opacity .5s ease;
+}
+.slider .person.next{
+    transform: translateX(100%);
+}
+.slider .person.last{
+    transform: translateX(-100%);
+}
+.slider .person.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.slider .btn{
+    position: absolute;
+    top: 45%;
+    border: none;
+    background: var(--clr-grey-4);
+    color: #ddd;
+    width: 30px;
+    height: 32px;
+    line-height: 27.5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.slider .next-btn{
+    right: 0;
+}
+.slider .prev-btn{
+    left: 0;
+}
+.slider .name{
+    color: var(--clr-primary-5);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.slider .title{
+    text-transform: capitalize;
+    color: var(--clr-grey-4);
+    margin-bottom: 45px;
+}
+.slider .quote{
+    line-height: 2;
+    color: var(--clr-grey-5);
+    text-align: center;
+}

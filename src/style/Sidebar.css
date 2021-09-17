@@ -1,0 +1,166 @@
+.sidebar{
+    background: var(--clr-grey-10);
+    position: absolute;
+}
+.sidebar .back-home{
+    left: auto;
+    right: 10px;
+}
+.sidebar nav{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400px;
+    transition: .3s linear;
+    padding: 20px 0;
+    transform: translateX(-100%);
+}
+.sidebar nav.show{
+    transform: translateX(0);
+}
+.sidebar nav button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(200, 10, 20, .3);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.sidebar nav img{
+    width: 200px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.sidebar nav button:hover{
+    color: rgba(200, 10, 20, .8);
+}
+.sidebar .links li{
+    padding: 15px;
+    transition: .3s linear;
+}
+.sidebar .links li:hover{
+    background: var(--clr-grey-9);
+}
+.sidebar .links li a{
+    display: block;
+    padding-left: 25px;
+    font-size: 20px;
+    width: 100%;
+    text-transform: capitalize;
+    color: #324d67;
+}
+.sidebar .links li span{
+    font-size: 23px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    color: #617d98;
+}
+.sidebar .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+.sidebar .socials li{
+    margin: 0 10px;
+}
+.sidebar .socials a{
+    color: #49a6e9;
+    font-size: 23px;
+}
+.sidebar .open-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #49a6e9;
+    border: 0;
+    background: 0;
+    font-size: 30px;
+    cursor: pointer;
+    animation: open-btn 1s linear infinite;
+}
+@keyframes open-btn{
+    0%{
+        transform: scale(1);
+    }
+    33%{
+        transform: scale(.8);
+    }
+    66%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.sidebar .modal-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar .modal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .4);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.sidebar .modal-container.show{
+    visibility: visible;
+}
+.sidebar .modal-content{
+    background: #fff;
+    width: 100%;
+    max-width: 625px;
+    height: 225px;
+    padding: 90px 0 110px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--clr-grey-1);
+}
+.sidebar .modal-content button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(200, 10, 20, .3);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.sidebar .modal-content button:hover{
+    color: rgba(200, 10, 20, .8);
+}
